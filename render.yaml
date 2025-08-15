@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nomos-backend
+    env: node
+    rootDir: Backend
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    autoDeploy: true
